@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
 
 * {
     margin: 0;
@@ -9,24 +9,25 @@
     list-style: none;
     text-decoration: none;
 }
-
+    
 :root {
-    --color-bg: #1f1f38;
-    --color-bg-variant: #2c2c6c;
-    --color-primary: #4db5ff;
-    --color-primary-variant: rgba(77, 181, 255, 0.4);
-    --color-white: #fff;
-    --color-light: rgba(255, 255, 255, 0.6);
+    --color-bg: #f5ebe0;
+    --color-bg-variant: #e3d5ca;
+    --color-primary:#744253;
+    --color-primary-variant: #c78283;
+    --color-white:#fff;
+    --color-light: rgba(255, 255, 25, 0.6);
 
     --transition: all 400ms ease;
 
     --container-width-lg: 75%;
     --container-width-md: 86%;
-    --container-width-sm: 90%;
+    --container-width-ms: 90%; 
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behaviour: smooth;
+
 }
 
 ::-webkit-scrollbar {
@@ -34,7 +35,8 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;   
     background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
@@ -118,6 +120,8 @@ img {
     width: 100%;
     object-fit: cover;
 }
+
+/* media queries for small devices */
 
 @media screen and (max-width: 1024px) {
     .container {
